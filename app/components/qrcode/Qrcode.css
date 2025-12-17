@@ -1,0 +1,147 @@
+.qrcode-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* occupe toute la hauteur pour centrer verticalement */
+  padding: 1rem;
+  background: var(--page-bg, #f7fafc); /* optionnel */
+}
+
+/* Conteneur principal : colonne avec header/top, main/centre, footer/bas */
+.qrcode-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 520px;
+  min-height: 560px;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(11, 22, 39, 0.06);
+  box-sizing: border-box;
+}
+
+/* Header : titre en haut */
+.qrcode-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.25rem;
+}
+
+.qrcode-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  text-align: center;
+}
+
+/* Main : zone centrale contenant QR et input */
+.qrcode-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex: 1 1 auto;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.qrcode-display {
+  width: 260px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
+  box-sizing: border-box;
+}
+
+/* S'assure que le SVG prend tout l'espace du conteneur */
+.qrcode-display svg {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* Input full-width à l'intérieur du conteneur */
+.qrcode-input {
+  width: 100%;
+  max-width: 420px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+/* Footer : boutons en bas */
+.qrcode-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.qrcode-btn {
+  padding: 0.6rem 0.95rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Styles bouton (variant simple) */
+.btn-primary {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+}
+
+.btn-secondary {
+  background: #f3f4f6;
+  color: #0f172a;
+  border: 1px solid #e5e7eb;
+}
+
+/* Responsive : agrandir le QR sur écrans larges */
+@media (min-width: 640px) {
+  .qrcode-display {
+    width: 300px;
+    height: 300px;
+  }
+  .qrcode-box {
+    max-width: 640px;
+    min-height: 620px;
+  }
+}
+@media (min-width: 1024px) {
+  .qrcode-display {
+    width: 340px;
+    height: 340px;
+  }
+  .qrcode-box {
+    max-width: 760px;
+    min-height: 680px;
+  }
+}
+
+/* Accessibilité focus */
+.qrcode-box button:focus,
+.qrcode-box input:focus {
+  outline: 3px solid rgba(59, 130, 246, 0.18);
+  outline-offset: 3px;
+}
