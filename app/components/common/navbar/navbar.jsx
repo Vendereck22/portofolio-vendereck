@@ -94,9 +94,7 @@ const NavBar = () => {
             duration={900}
             className="flex items-center border-0 lg:max-xxl:ps-5"
           >
-            <p className="text-2xl sm:text-[32px] my-auto ms-12 font-semibold">
-              Vendereck
-            </p>
+            <p className="text-2xl sm:text-[32px] my-auto ms-12 font-semibold"></p>
           </Link>
         </div>
 

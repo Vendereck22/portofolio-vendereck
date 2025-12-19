@@ -29,19 +29,19 @@ const Form = () => {
         <form className="flex flex-col gap-4 mt-4">
           <input
             type="text"
-            placeholder="Name*"
+            placeholder="Nom : "
             className={`${commonClass}`}
             required
           />
           <input
             type="email"
-            placeholder="Email*"
+            placeholder="Email :"
             className={`${commonClass}`}
             required
           />
           <input
             type="text"
-            placeholder="Location*"
+            placeholder="Location : "
             className={`${commonClass}`}
             required
           />
@@ -49,13 +49,13 @@ const Form = () => {
           <div className="flex max-xs:flex-col max-xs:gap-4">
             <input
               type="text"
-              placeholder="Budget*"
+              placeholder="Budget :"
               className={`${commonClass} xs:w-[50%] me-5`}
               required
             />
             <input
               type="text"
-              placeholder="Subject*"
+              placeholder="Sujet :"
               className={`${commonClass}`}
               required
             />
@@ -63,12 +63,12 @@ const Form = () => {
 
           <input
             type="text"
-            placeholder="Message*"
+            placeholder="Message :"
             className={`${commonClass}`}
             required
           />
           <button
-            type="submit"
+            type="soumettre :"
             className="btn gap-3 max-lg:mx-auto btn-primary rounded-sm mt-5 text-[13px] md:text-[16px] w-fit font-semibold lg:mt-12.5 p-2 md:px-4"
           >
             Submit {telegramSVG}

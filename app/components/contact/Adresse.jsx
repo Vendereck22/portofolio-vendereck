@@ -1,26 +1,40 @@
-import Image from "next/image";
-const MonoBlog = ({ data }) => {
+"use client";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { useState } from "react";
+
+const Address = ({ data }) => {
+  const [hover, setHover] = useState(false);
+
   return (
-    <div className="overflow-hidden rounded-lg border border-gray-100 hover:shadow-2xl bg-white shadow-gray-300 transition-all duration-300">
-      <a href={data?.link}>
-        <Image
-          src={data?.image}
-          alt="Blog"
-          className="w-full h-56.5 object-cover "
+    <div
+      className="max-w-84 p-3 md:p-3.75 lg:p-6 flex xs:not-odd:my-3 rounded-[10px] bg-white  hover:scale-[1] duration-450  cursor-pointer hover:shadow-[0px_0px_37px_5px_rgba(0,_0,_0,_0.1)] shadow-gray-200 max-sm:mx-auto"
+      /* Scale effect:  */
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+    >
+      <div
+        className={`h-10 md:h-12 aspect-square ${
+          hover ? "bg-picto-primary" : "bg-[#EDD8FF80]"
+        } center rounded-[4px]`}
+      >
+        <FontAwesomeIcon
+          icon={data?.icon}
+          className={`text-lg md:text-xl ${
+            hover ? "text-white" : "text-picto-primary"
+          }`}
         />
-        <div className="m-6">
-          <p className="text-[10px] xs:text-[14px] font-normal text-gray-400 ">
-            {data?.date} / {data?.comments} Comments
-          </p>
-          <p className="text-[14px] xs:text-lg font-medium text-[#333333]">
-            {data?.title.length > 40
-              ? `${data?.title.slice(0, 40)}...`
-              : data?.title}
-          </p>
-        </div>
-      </a>
+      </div>
+      <div className="ms-3.25">
+        <p className="text-[12px] md:text-[14px] text-[#424E60] font-normal">
+          {data?.title}:
+        </p>
+        <p className="text-[14px] md:text-[16px] text-[#132238] font-medium">
+          {data?.description}
+        </p>
+      </div>
     </div>
   );
 };
 
-export default MonoBlog;
+export default Address;

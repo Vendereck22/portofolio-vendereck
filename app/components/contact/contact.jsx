@@ -3,6 +3,7 @@ import {
   faLocationDot,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Address from "./Adresse";
 import Form from "./form";
 import SocialMedia from "../common/socialmedia/socialmedia";
@@ -11,17 +12,17 @@ const addressData = [
   {
     icon: faLocationDot,
     title: "Address",
-    description: "New Mexico, 31134",
+    description: "Kinshasa, Ngaliema, RDC",
   },
   {
     icon: faEnvelope,
-    title: "My Email",
-    description: "mymail@mail.com",
+    title: "Email",
+    description: "tsimbanguala150@gmail.com",
   },
   {
     icon: faPhone,
-    title: "Call Me Now",
-    description: "00-123 00000",
+    title: "contactez-moi",
+    description: "+243 974072465",
   },
 ];
 
@@ -46,7 +47,7 @@ const Contact = () => {
             </div>
             <div className="my-8.75 sm:max-lg:flex justify-between items-center">
               {addressData.map((item, index) => (
-                <Address item={item} key={index} />
+                <Address key={index} data={item} />
               ))}
             </div>
             <div className="w-full max-lg:text-center max-md:mb-4">

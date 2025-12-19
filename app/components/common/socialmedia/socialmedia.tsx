@@ -5,6 +5,7 @@ import {
   faLinkedin,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const socialIcons = [
@@ -16,7 +17,9 @@ const socialIcons = [
     link: "https://www.linkedin.com/in/vendereck-nguala-014067251/",
   },
   { icon: faWhatsapp, link: "https://wa.me/974072465" },
-  { icon: faTiktok, link: "https://www.tiktok.com/@Vendereck.nguala" },
+  // { icon: faTiktok, link: "https://www.tiktok.com/@Vendereck.nguala" },
+  { icon: faEnvelope, link: "mailto:tsimbanguala150@gmail.com" },
+  { icon: faPhone, link: "tel:+243974072465" },
 ];
 
 const SocialMedia = () => {
