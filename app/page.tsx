@@ -1,5 +1,3 @@
-//import Introduction from "../app/components/Introduction/Introduction";
-import Testimonial from "./components/testimonial/Testimonial";
 import Contact from "./components/contact/contact";
 import Profile from "./components/profile/Profile";
 import WorkProcess from "./components/workprocess/WorkProcess";
