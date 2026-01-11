@@ -2,7 +2,7 @@
 import person from "../../assets/images/person2.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import SocialMedia from "../common/socialmedia/socialmedia";
+import SocialMedia from "../Common/SocialMedia/SocialMedia";
 import Link from "next/link";
 import Image from "next/image";
 
