@@ -1,7 +1,7 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const WorkTogether = () => {
+export const WorkTogether = () => {
   return (
     <div className="py-25 max-w-169 mx-auto px-2">
       <div className="text-center">

@@ -5,8 +5,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Address from "./Adresse";
-import Form from "./form";
-import SocialMedia from "../common/socialmedia/socialmedia";
+import SocialMedia from "../Common/SocialMedia/SocialMedia";
 
 const addressData = [
   {
@@ -58,7 +57,7 @@ const Contact = () => {
             <p className="text-xl mb-2 xs:text-2xl sm:text-2xl md:text-[38px] font-semibold text-[#132238] lg:hidden text-center">
               Parlons de votre projet.
             </p>
-            <Form />
+            {/* <Form /> */}
           </div>
         </div>
       </div>

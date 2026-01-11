@@ -23,7 +23,7 @@ const Projects = ({ data }) => {
         >
           Voir le projet
           <span className="ms-1 xs:ms-3">
-            <FontAwesomeIcon icon={faArrowRight} size="l" className="" />
+            <FontAwesomeIcon icon={faArrowRight} size="" className="" />
           </span>
         </a>
         {/* </p> */}

@@ -1,8 +1,8 @@
 "use client";
 import "./globals.css";
-import Footer from "./components/Common/footer/footer";
-import NavBar from "./components/common/navbar/navbar";
-import ScrollToTop from "./components/Common/Scrolltotop/ScrollToTop";
+import Footer from "./components/Common/Footer /Footer";
+import NavBar from "./components/Common/NavBar /NavBar";
+import ScrollToTop from "./components/Common/ScrollToTop/ScrollToTop";
 export default function RootLayout({
   children,
 }: Readonly<{
