@@ -1,5 +1,5 @@
 import Contact from "./components/Contact/Contact";
-import Profile from "./components/Profile /Profile";
+import Profile from "./components/Profile/Profile";
 import WorkProcess from "./components/WorkProcess/WorkProcess";
 import Portfolio from "./components/Portfolio/Portfolio";
 import WorkTogether from "./components/WorkTogether/WorkTogether";

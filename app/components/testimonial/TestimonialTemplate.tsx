@@ -1,4 +1,15 @@
-const TestimonialTemplate = ({ testimonial }) => {
+interface TestimonialData {
+  message: string;
+  quote: string;
+  name: string;
+  designation: string;
+}
+
+const TestimonialTemplate = ({
+  testimonial,
+}: {
+  testimonial: TestimonialData;
+}) => {
   return (
     <div className="flex flex-col h-full">
       <div className="text-center mx-auto">

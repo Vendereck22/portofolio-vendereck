@@ -1,7 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
+interface RoleData {
+  title: string;
+  description: string;
+}
 
-const Roles = ({ role }) => {
+const Roles = ({ role }: { role: RoleData }) => {
   const [mouseHover, setMouseHover] = useState(false);
   useEffect(() => {
     window.addEventListener("mouseenter", (e) => {

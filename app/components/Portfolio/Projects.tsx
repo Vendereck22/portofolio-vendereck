@@ -1,8 +1,16 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-const Projects = ({ data }) => {
+interface ProjectData {
+  image: string | StaticImageData;
+  title: string;
+  category: string;
+  description: string;
+  link: string;
+}
+
+const Projects = ({ data }: { data: ProjectData }) => {
   return (
     <div className="max-w-106 rounded-lg outline-[#FFFFFF] hover:shadow-2xl duration-300 transition-all shadow-gray-300 border border-gray-200">
       <Image src={data?.image} alt={`${data?.title} image`} />
@@ -23,7 +31,7 @@ const Projects = ({ data }) => {
         >
           Voir le projet
           <span className="ms-1 xs:ms-3">
-            <FontAwesomeIcon icon={faArrowRight} size="" className="" />
+            <FontAwesomeIcon icon={faArrowRight} size="lg" className="" />
           </span>
         </a>
         {/* </p> */}

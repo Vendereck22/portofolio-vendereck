@@ -1,4 +1,9 @@
-const InformationSummary = ({ item }) => {
+interface InformationSummaryItem {
+  description: string;
+  title: string;
+}
+
+const InformationSummary = ({ item }: { item: InformationSummaryItem }) => {
   return (
     <div className={`bg-[#F6EBFE] text-center`}>
       <div className="w-auto h-auto mx-2 sm:mx-4 my-5 xxs:my-5 sm:my-[17px]">

@@ -6,10 +6,6 @@ import SocialMedia from "../Common/SocialMedia/SocialMedia";
 import Link from "next/link";
 import Image from "next/image";
 
-const CvDownload = () => {
-  CvPath = "/Vendereck Nguala moise .pdf";
-};
-
 const Profile = () => {
   return (
     <div
@@ -69,7 +65,8 @@ const Profile = () => {
             <Link
               className={`btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 hover:border-picto-primary bg-white duration-300 transition-all hover:text-picto-primary  ms-4 text-xs xxs:text-[14px] sm:text-[16px]`}
               href="/Vendereck Nguala moise .pdf"
-              onClick={CvDownload}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faDownload} /> Télécharger mon CV
             </Link>

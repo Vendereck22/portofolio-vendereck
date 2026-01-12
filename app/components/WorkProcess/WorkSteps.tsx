@@ -1,7 +1,14 @@
 "use client";
 import { useState } from "react";
 
-const WorkSteps = ({ data, style }) => {
+interface WorkStepData {
+  id: number;
+  title: string;
+  description: string;
+  svgPath: string;
+}
+
+const WorkSteps = ({ data, style }: { data: WorkStepData; style?: string }) => {
   const [hover, setHover] = useState(false);
   return (
     <div
