@@ -19,6 +19,8 @@ const MonoBlog = ({ data }: { data: BlogData }) => {
           src={data?.image}
           alt="Blog"
           className="w-full h-56.5 object-cover "
+          width={400}
+          height={225}
         />
         <div className="m-6">
           <p className="text-[10px] xs:text-[14px] font-normal text-gray-400 ">
