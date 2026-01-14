@@ -1,17 +1,9 @@
 import Projects from "./Projects";
-import card1 from "../../assets/images/portfolio-images/card-1.jpg";
-import card2 from "../../assets/images/portfolio-images/card-2.jpg";
-import card3 from "../../assets/images/portfolio-images/card-3.jpg";
-import card4 from "../../assets/images/portfolio-images/card-4.jpg";
-import card5 from "../../assets/images/portfolio-images/card-5.jpg";
-import card6 from "../../assets/images/portfolio-images/card-6.jpg";
-import card7 from "../../assets/images/portfolio-images/card-7.jpg";
-import card8 from "../../assets/images/portfolio-images/card-8.jpg";
 
 const projectData = [
   {
     id: 1,
-    image: card1,
+    image: "/images/portfolio/card-1.jpg",
     category: "Coding",
     title: "Programmation Scratch",
     description:
@@ -20,7 +12,7 @@ const projectData = [
   },
   {
     id: 2,
-    image: card2,
+    image: "/images/portfolio/card-2.jpg",
     category: "ROBOTIQUE",
     title: "Robotique Éducative",
     description:
@@ -29,7 +21,7 @@ const projectData = [
   },
   {
     id: 3,
-    image: card3,
+    image: "/images/portfolio/card-3.jpg",
     category: "Coding",
     title: "developppent de jeux éducatifs avec scratch",
     description:
@@ -38,7 +30,7 @@ const projectData = [
   },
   {
     id: 4,
-    image: card4,
+    image: "/images/portfolio/card-4.jpg",
     category: "Formateur en freelance ",
     title: "Formateur en coding et Robotique Éducative de jeunes",
     description:
@@ -47,7 +39,7 @@ const projectData = [
   },
   {
     id: 5,
-    image: card5,
+    image: "/images/portfolio/card-5.jpg",
     category: "IoT",
     title: "Arduino et IoT pour débutants",
     description:
@@ -56,7 +48,7 @@ const projectData = [
   },
   {
     id: 6,
-    image: card6,
+    image: "/images/portfolio/card-6.jpg",
     category: "des enfants de 7 à 14 ans",
     title: "Ateliers technologiques pour enfants",
     description:
@@ -65,7 +57,7 @@ const projectData = [
   },
   {
     id: 7,
-    image: card7,
+    image: "/images/portfolio/card-7.jpg",
     category: "Developpement web",
     title: "Sites web ",
     description:
@@ -74,7 +66,7 @@ const projectData = [
   },
   {
     id: 8,
-    image: card8,
+    image: "/images/portfolio/card-8.jpg",
     category: "Laboratoire de réparation",
     title: "la micro soudure et la réparation électronique",
     description:

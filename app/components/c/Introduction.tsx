@@ -1,5 +1,5 @@
 import InformationSummary from "./InformationSummary";
-import person from "../../assets/images/person.jpg";
+
 import Image from "next/image";
 // Information summary data
 const informationSummaryData = [
@@ -82,9 +82,11 @@ const Introduction = () => {
         className={`max-w-134 w-full h-full max-lg:mx-auto aspect-536/636 relative`}
       >
         <Image
-          className={`shadow-2xl shadow-gray-200 w-full h-full absolute bottom-0 object-cover bg-white rounded-3xl`}
-          src={person}
+          className={`shadow-2xl shadow-gray-200 w-full h-full absolute bottom-0 object-cover bg-white rounded-2xl`}
+          src={"/images/person.jpg"}
           alt="person"
+          width={436}
+          height={43}
         />
       </div>
     </div>
