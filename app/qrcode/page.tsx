@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import QrCodeGenerator from "../components/g/QrCode";
+import QrCodeGenerator from "../components/codeqr/QrCode";
 
 export const metadata: Metadata = {
   title: "Mon Qr Code Generator",

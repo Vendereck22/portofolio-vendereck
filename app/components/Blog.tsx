@@ -5,7 +5,7 @@ import { Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
-import "./Blog.css";
+import "../../styles/Blog.module.css";
 import MonoBlog from "./MonoBlog";
 
 const custom_breakpoints = {
