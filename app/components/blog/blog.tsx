@@ -1,14 +1,14 @@
 "use client";
-import img1 from "../../assets/images/blog/Blog-1.jpg";
-import img2 from "../../assets/images/blog/Blog-2.jpg";
+
 //import img3 from "../../assets/images/blog/blog-3.jpg";
 //import img4 from "../../assets/images/blog/blog-4.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-import MonoBlog from "./MonoBlog";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "./Blog.css";
+import MonoBlog from "./MonoBlog";
 
 const custom_breakpoints = {
   640: {
@@ -28,7 +28,7 @@ const custom_breakpoints = {
 const blogData = [
   {
     id: 1,
-    image: img1,
+    image: "/images/blog/Blog-1.jpg",
     date: "22 Oct, 2022",
     commentaire: 246,
     title: "Plus de 250 enfants formés au codage",
@@ -36,7 +36,7 @@ const blogData = [
   },
   {
     id: 2,
-    image: img2,
+    image: "/images/blog/Blog-2.jpg",
     date: "2019, 2025",
     commentaire: 500,
     title: "plus de 500 telephone  mobiles apple reparés",

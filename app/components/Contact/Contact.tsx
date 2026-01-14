@@ -6,8 +6,8 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 
-import Address from "../Contact/Adresse";
 import SocialMedia from "../Common/SocialMedia/SocialMedia";
+import Address from "./Adresse";
 
 const addressData = [
   {
