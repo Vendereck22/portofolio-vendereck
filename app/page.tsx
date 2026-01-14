@@ -1,13 +1,13 @@
 // ... fais de même pour les autres
 
-import Blog from "./components/Blog/Blog";
-import Contact from "./components/Contact/Contact";
-import Introduction from "./components/Introduction/Introduction";
-import Portfolio from "./components/Portfolio/Portfolio";
-import Profession from "./components/Profession/Profession";
-import Profile from "./components/Profile/Profile";
-import WorkProcess from "./components/WorkProcess/WorkProcess";
-import WorkTogether from "./components/WorkTogether/WorkTogether";
+import Blog from "./components/blog/Blog";
+import Contact from "./components/contact/Contact";
+import Introduction from "./components/introduction/Introduction";
+import Portfolio from "./components/portfolio/Portfolio";
+import Profession from "./components/profession/Profession";
+import Profile from "./components/profile/Profile";
+import WorkProcess from "./components/workprocess/WorkProcess";
+import WorkTogether from "./components/worktogether/WorkTogether";
 
 const Home = () => {
   return (
