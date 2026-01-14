@@ -1,11 +1,11 @@
-import Contact from "./Components/Contact/Contact";
-import Profile from "./Components/Profile/Profile";
-import WorkProcess from "./Components/WorkProcess/WorkProcess";
-import Portfolio from "./Components/Portfolio/Portfolio";
-import WorkTogether from "./Components/WorkTogether/WorkTogether";
-import Blog from "./Components/Blog/Blog";
-import Profession from "./Components/Profession/Profession";
-import Introduction from "./Components/Introduction/Introduction";
+import Contact from "./components/Contact/Contact";
+import Profile from "./components/Profile/Profile";
+import WorkProcess from "./components/WorkProcess/WorkProcess";
+import Portfolio from "./components/Portfolio/Portfolio";
+import WorkTogether from "./components/WorkTogether/WorkTogether";
+import Blog from "./components/Blog/Blog";
+import Profession from "./components/Profession/Profession";
+import Introduction from "./components/Introduction/Introduction";
 
 // ... fais de même pour les autres
 

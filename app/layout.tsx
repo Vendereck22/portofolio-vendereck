@@ -1,7 +1,7 @@
 import "./globals.css";
-import Footer from "./Components/Common/Footer/Footer";
-import NavBar from "./Components/Common/NavBar/NavBar";
-import ScrollToTop from "./Components/Common/ScrollToTop/ScrollToTop";
+import Footer from "./components/Common/Footer/Footer";
+import NavBar from "./components/Common/NavBar/NavBar";
+import ScrollToTop from "./components/Common/ScrollToTop/ScrollToTop";
 export default function RootLayout({
   children,
 }: {
